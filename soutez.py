@@ -2,6 +2,7 @@ import requests
 import random
 import string
 import random
+import time
 from proxy_requests import ProxyRequests
 
 
@@ -11,6 +12,7 @@ headers = {
 }
 
 while True:
+    cas = random.randint(0,500)
     #from proxy_requests import ProxyRequests
     #register_data = {"POST":"/vote/479 HTTP/1.1"}
     #print (register_data)
@@ -22,3 +24,4 @@ while True:
     print(r)
     print(r.get_status_code())
     print(r.get_proxy_used())
+    time.sleep(cas)
