@@ -24,4 +24,4 @@ while True:
     print(r)
     print(r.get_status_code())
     print(r.get_proxy_used())
-    #time.sleep(cas)
+    time.sleep(cas)
